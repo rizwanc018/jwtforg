@@ -3,7 +3,7 @@
 # Creating  new jwt token 
 if [ -z "$1" ] 
 then
-    echo "Usage : jwt.sh <hostname> <header and payload in jwt form>"
+    echo "Usage : ./jwtforg.sh <hostname> <header and payload in jwt form>"
     exit
 fi
 openssl s_client -connect $1:443 > cert.pem
